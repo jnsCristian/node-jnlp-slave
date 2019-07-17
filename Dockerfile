@@ -1,5 +1,7 @@
 FROM jenkins/jnlp-slave:alpine
 
+ENV CHROME_BIN="/usr/bin/chromium-browser"
+
 USER root
 
 RUN apk update && apk upgrade
